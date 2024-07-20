@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resource.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Resource</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="welcome-container">
+        <h3>Welcome</h3>
+        <div class="resource-button">
+          <button id="show-modal">Create A Resource</button>
+        </div>
+      </div>
+
+      <div class="second-container" id="second-container">
+        <!-- <div class="containerOne hidden" id="containerOne">
+          <div class="delete-resource">
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+        <div class="containerTwo hidden" id="containerTwo">
+          <div class="delete-resource">
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+        <div class="containerThree hidden" id="containerThree">
+          <div class="delete-resource">
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <div class="close-icon-container">
+        <i class="fa-solid fa-x" id="close-icon"></i>
+      </div>
+      <form id="forms">
+        <h3 class="create-resource">Create Resource</h3>
+        <div class="input-group">
+          <label for="namewebsite">Name Of Website</label>
+          <input
+            type="text"
+            name="namewebsite"
+            id="namewebsite"
+            placeholder="e.g Data Analysis Website for NASA"
+          />
+          <p class="namewebsite-alert" id="namewebsite-alert"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="linkwebsite">Link Of Website</label>
+          <input
+            type="text"
+            name="linkwebsite"
+            id="linkwebsite"
+            placeholder="www.link.com"
+          />
+          <p class="linkwebsite-alert" id="linkwebsite-alert"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="describewebsite">Description Of Website</label>
+          <textarea
+            type="text"
+            name="describewebsite"
+            id="describewebsite"
+            placeholder="Enter Description"
+          ></textarea>
+          <p class="describewebsite-alert" id="describewebsite-alert"></p>
+        </div>
+        <div class="create-button" id="create-button">
+          <button id="button">Create</button>
+        </div>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="resource.js"></script>
+    <script src="container.js"></script>
+  </body>
+</html>
